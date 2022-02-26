@@ -1,3 +1,3 @@
 export default {
-    CHANGE_REGION : "changeRegion"
+    CHANGE_REGION: "changeRegion"
 }
