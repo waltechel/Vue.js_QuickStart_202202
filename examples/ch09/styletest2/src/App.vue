@@ -8,24 +8,24 @@
 </template>
 
 <script>
-import Child1 from './components/Child1.vue'
-import Child2 from './components/Child2.vue'
-import Module1 from './components/Module1.vue'
+import Child1 from "./components/Child1.vue";
+import Child2 from "./components/Child2.vue";
+import Module1 from "./components/Module1.vue";
 
 export default {
-  name: 'app',
-  components : { Child1, Child2, Module1 },
-  data () {
+  name: "app",
+  components: { Child1, Child2, Module1 },
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      msg: "Welcome to Your Vue.js App"
+    };
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

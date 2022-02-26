@@ -6,18 +6,21 @@
   </div>
 </template>
 <script>
-import Child11 from './Child11.vue'
+import Child11 from "./Child11.vue";
 
 export default {
-  name: 'child1',
-  components : { Child11 },
-  data () {
+  name: "child1",
+  components: { Child11 },
+  data() {
     return {
-      msg: 'Child1'
-    }
+      msg: "Child1"
+    };
   }
-}
+};
 </script>
 <style scoped>
-.main { border:solid 1px black; background-color:yellow; }
+.main {
+  border: solid 1px black;
+  background-color: yellow;
+}
 </style>

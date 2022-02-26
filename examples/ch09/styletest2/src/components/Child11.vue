@@ -5,5 +5,7 @@
 </template>
 
 <style scoped>
-  .test { font-style:italic; }
+.test {
+  font-style: italic;
+}
 </style>
