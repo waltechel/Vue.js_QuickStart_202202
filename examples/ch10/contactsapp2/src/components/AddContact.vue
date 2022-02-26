@@ -1,11 +1,12 @@
 <template>
-    <contactForm mode="add" />
+<!--  -->
+  <contactForm mode="add" />
 </template>
 
 <script>
-import ContactForm from './ContactForm.vue';
+import ContactForm from "./ContactForm.vue";
 export default {
-    name : "addContact",
-    components : { ContactForm }
-}
+  name: "addContact",
+  components: { ContactForm }
+};
 </script>
