@@ -1,4 +1,4 @@
-let contactlist = {
+const contactlist = {
     contacts: [
         { no: 1001, name: '김유신', tel: '010-1212-3331', address: '경주' },
         { no: 1002, name: '장보고', tel: '010-1212-3332', address: '청해진' },
@@ -13,4 +13,3 @@ let contactlist = {
 }
 
 export default contactlist;
-

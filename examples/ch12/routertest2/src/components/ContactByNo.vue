@@ -41,7 +41,17 @@ export default {
   },
   computed: {
     contact() {
-      return this.contacts.find(item => item.no === this.no);
+      let no = this.no;
+      let arr = this.contacts.filter(function(item) {
+        return item.no === no;
+      });
+      if (arr.length === 1) {
+        return arr[0];
+      } else {
+        return {};
+      }
+
+      //   return this.contacts.find(item => item.no === this.no);
     }
   }
 };

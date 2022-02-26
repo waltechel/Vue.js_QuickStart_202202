@@ -27,6 +27,7 @@ import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Contacts from './components/Contacts.vue';
 import ContactByNo from './components/ContactByNo.vue';
+import VueRouter from 'vue-router'
 
 const router = new VueRouter({
   routes : [
