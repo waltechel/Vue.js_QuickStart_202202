@@ -17,17 +17,21 @@ Vue.use(VueRouter);
 Vue.config.productionTip = false
 
 const router = new VueRouter({
-  mode : "history",
-  routes : [
-    {  path: '/', redirect:'/home' },
-    {  path: '/home', name:'home', component:Home },
-    {  path: '/about', name:'aboout', component:About },
-    { 
-      path:'/contacts', name:'contacts', component:ContactList, children : [
-        { path:'add', name:'addcontact',component: ContactForm },
-        { path:'update/:no', name:'updatecontact',component: ContactForm, props : true },
-        { path:'photo/:no', name:'updatephoto',component: UpdatePhoto, props: true }  
-      ] 
+  mode: "history",
+  routes: [
+    // / 라면 /home 경로로 강제 이동시킵니다.
+    { path: '/', redirect: '/home' },
+    { path: '/home', name: 'home', component: Home },
+    { path: '/about', name: 'aboout', component: About },
+    {
+      path: '/contacts', name: 'contacts', component: ContactList,
+      // 중첩 라우트를 사용합니다.
+      children: [
+        { path: 'add', name: 'addcontact', component: ContactForm },
+        // props로 사용합니다.
+        { path: 'update/:no', name: 'updatecontact', component: ContactForm, props: true },
+        { path: 'photo/:no', name: 'updatephoto', component: UpdatePhoto, props: true }
+      ]
     },
   ]
 })

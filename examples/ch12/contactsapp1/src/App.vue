@@ -1,27 +1,28 @@
 <template>
   <div id="container">
-      <div class="page-header">
-         <h1 class="text-center">연락처 관리 애플리케이션</h1>
-         <p>(Vue-router + Vuex + Axios) </p>
-         <div class="btn-group">
-            <router-link to="/home" class="btn btn-info menu">Home</router-link>
-            <router-link to="/about" class="btn btn-info menu">About</router-link>
-            <router-link to="/contacts" class="btn btn-info menu">Contacts</router-link>
-         </div>
+    <div class="page-header">
+      <h1 class="text-center">연락처 관리 애플리케이션</h1>
+      <p>(Vue-router + Vuex + Axios)</p>
+      <div class="btn-group">
+        <router-link to="/home" class="btn btn-info menu">Home</router-link>
+        <router-link to="/about" class="btn btn-info menu">About</router-link>
+        <router-link to="/contacts" class="btn btn-info menu">Contacts</router-link>
       </div>
-      <router-view></router-view>
+    </div>
+    <!-- 동적 컴포넌트 기능 필요 없이 router-view를 사용합니다. -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {    
-    name: 'app'
-}
+export default {
+  name: "app"
+};
 </script>
 
 <style scoped>
 #container {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -29,6 +30,6 @@ export default {
   margin-top: 60px;
 }
 .menu {
-  width : 100px;
+  width: 100px;
 }
 </style>

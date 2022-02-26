@@ -7,6 +7,12 @@
   </div>
 </template>
 <style>
-#example { margin:10px auto; max-width: 820px; min-width: 820px;
-    padding:0px; position:relative; font: 13px "verdana"; }
+#example {
+  margin: 10px auto;
+  max-width: 820px;
+  min-width: 820px;
+  padding: 0px;
+  position: relative;
+  font: 13px "verdana";
+}
 </style>
